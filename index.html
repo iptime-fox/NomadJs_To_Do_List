@@ -10,29 +10,34 @@
 <body>
 
 <img src="img/wallpaper.jpg" id="wallpaper" alt="wallpaper">
-
 <!-- Greetings -->
 <form id="login-form" class="hidden">
-  <input required maxlength="10" type="text" placeholder="What's your name?"><button>Log In</button>
+  <input required maxlength="15" type="text" placeholder="What's your name?"><button>Log In</button>
 </form>
-
 <h1 id="greeting" class="hidden"></h1>
-
-<!-- Clock & Weather -->
+<div>
+<div class="container">
+<!-- Clock -->
 <h2 id="clock">00:00:00</h2>
 
-<div id="weather">
-  <span></span>&#8451;
-  <span></span>
-</div>
 <!-- Quotes -->
 <div id="quote">
-  <span></span>
+  <span></span><br>
   <span></span>
 </div>
+
+</div>
+</div>
+
+<!-- Weather -->
+<div id="weather">
+  <span></span>&#8451;
+ 
+</div>
+
 <!-- Todo -->
 <form id="todo-form">
-  <input type="text" placeholder="Write a To Do and Press Enter" required />
+  <input type="text" placeholder="Write a To Do and Press Enter" required maxlength="20"/>
  </form>
 <ul id="todo-list"></ul>
 
