@@ -3,19 +3,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Noto+Sans+KR:wght@100;300;400;500&display=swap');
 
 *{margin: 0; padding: 0; box-sizing: border-box;}
-body{width: 100%; height: 100vh; left: 0;top: 0;font-family: 'Inter', 'Noto Sans KR', sans-serif;position: fixed;}
+body{width: 100%; height: 100vh; left: 0;top: 0;font-family: 'Inter', 'Noto Sans KR', sans-serif;position: fixed; }
 ul{list-style: none;}
 img{display: block;}
 button, input, textarea{border: lpx solid ; outline: 0; background: #fff; font-size: 14px; font-family: 'Inter', 'Noto Sans KR', sans-serif; }
 
 /* 배경 이미지 */
-#wallpaper{width: 100%;height: 100vh; z-index: -10; position: fixed;}
+img{width: 100%;height: 100vh; z-index: -10; position: fixed;}
 
 /* 로그인 */
 #login-form{position: absolute;left: 10%; transform: translateX(-10%); top: 5%; transform: translateY(-5%);}
 #login-form input{width: 200px; font-size: 20px; padding: .25rem; height: auto; margin-right: .5rem;border-radius: .5rem; background: #fff; opacity: .8;}
 #login-form button{width: 60px; height: auto; font-size: 14px; padding: 0.1rem .25rem; border-radius: .5rem; background: #fff; opacity: .8;}
-#greeting{font-size: 30px;font-size: 30px; padding: 1rem;position: absolute;left: 10%;transform: translateX(-10%); top: 5%; transform: translateY(-5%);color: #444;}
+#greeting{font-size: 20px;padding: 1rem;position: absolute;left: 10%;transform: translateX(-10%); top: 5%; transform: translateY(-5%);color: #444;}
 
 /* 시간, 명언 위치 */
 .container{width: 300px;position: absolute; display: flex; flex-direction: column; align-items: flex-end;right: 8%; transform: translateX(-8%); top: 25%;transform: translateY(-25%);}
@@ -24,16 +24,18 @@ button, input, textarea{border: lpx solid ; outline: 0; background: #fff; font-s
 .container #clock{color: #555; margin-bottom: 3rem;}
 
 /* 날씨 */
-#weather{left: 15%;transform: translateX(-15%); position: absolute; top: 25%;transform: translateY(-25%); color: #333; font-size: 20px; }
+#weather{left: 11%;transform: translateX(-11%); position: absolute; top: 12%;transform: translateY(-12%); color: #333; font-size: 20px; background: #fff;margin-right: .25rem; padding: .25rem; opacity: .8; border-radius: .5rem; }
 
 /* 명언 */
-#quote{width: 280px; height: auto; font-size: 18px; padding: 0 .5rem; color: #333;}
+#quote{width: 280px; height: auto; font-size: 18px; padding: 0 .5rem; color: #333; background: #fff;margin-right: .25rem; padding: .25rem; opacity: .8; border-radius: .5rem;}
 
 /* todo */
-#todo-form{position: absolute; top: 30%; transform: translateY(-30%);left: 50%; transform: translateX(-50%);}
-#todo-form input{width: 250px; height: 30px; font-size: 18px;color: #444;}
+#todo-form{position: absolute; top: 30%; transform: translateY(-30%);left: 50%; transform: translateX(-50%); }
+#todo-form input{width: 250px; height: 30px; font-size: 18px;color: #444;border-radius: .5rem;}
 
 #todo-list{position: absolute; top: 35%; transform: translateY(-35%);left: 50%; transform: translateX(-50%); }
 #todo-list li{margin-bottom: 1rem;}
-#todo-list span{background: #fff;margin-right: .25rem; padding: .25rem; opacity: .8; }
+#todo-list span{background: #fff;margin-right: .25rem; padding: .25rem; opacity: .8; border-radius: .5rem;}
 #todo-list button{border: 0; background: none;}
+
+
